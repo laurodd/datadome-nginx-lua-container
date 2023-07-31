@@ -10,17 +10,17 @@ Open the simple/example file nginx.conf and set your sever-side-key
 
 ## 2 - Build the docker image
 ```
-docker image build . -t my-nginx-lua
+docker image build . -t my-nginx-lua-c
 ```
 
 ## 3 - Run the docker image
 ```
-docker run -d --rm --name myNginxLua -p 8080:80 my-nginx-lua
+docker run -d --rm --name myNginxLuaC -p 8181:80 my-nginx-lua-c
 ```
 
 ## Test
 ```
-curl -v  http://localhost:8080/
+curl -v  http://localhost:8181/
 ```
 You should be able to see DataDome cookie
 
